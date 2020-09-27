@@ -1,0 +1,10 @@
+<h1>Все туры:</h1>
+
+{% for tour_id in tours %}
+    <p>{{ tours[tour_id].country }} <a href="/data/tours/{{ tour_id }}"> {{ tours[tour_id].title}} {{ tours[tour_id].price }} {{ tours[tour_id].stars }}*</a></p>
+
+{% endfor %}
+
+<p>Куба: <a href="/data/tours/1/">Marina Lake Hotel & Spa 62000 4* </a></p>
+<p>Вьетнам: <a href="/data/tours/2/">Baroque Hotel 85000 5* </a></p>
+<p>Пакистан: <a href="/data/tours/3/">Voyager Resort 63000 3* </a></p>
